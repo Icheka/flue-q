@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" />
+
+    <title>Flue-Q: QR Code Generator</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script type="text/javascript" src="html5-qrcode.js"></script>
+  </head>
+  <body>
+    <div id="menu-bar">
+        <span id="app-name">FlueQ: </span> <br />
+        <span id="mid-print">-- the QR Generator by Icheka --</span>
+        <br />
+        <a id="small-print" href="wa.me/2348050314328">Talk to Icheka</a>
+    </div>
+
+    <form name="QRform" id="QRform">
+      <textarea name="textField" id="textField" onkeyup='updateQRCode(this.value)' onclick="this.focus();this.select();">Icheka</textarea>
+    </form>
+    
+    <!-- The QRCode will appear here. -->
+    <!-- No need for HTML5 canvas :)) -->
+    <div id="qrcode"></div>
+    
+    <script type="text/javascript">
+      function updateQRCode(text) {
+
+        var element = document.getElementById("qrcode");
+
+        var bodyElement = document.body;
+        if(element.lastChild)
+          element.replaceChild(showQRCode(text), element.lastChild);
+        else
+          element.appendChild(showQRCode(text));
+
+      }
+
+      updateQRCode('www.tutorialspoint.com');
+    </script>
+  </body>
+</html>

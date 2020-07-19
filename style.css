@@ -1,0 +1,55 @@
+@media screen and (min-width: 100px) {
+    body {
+        text-align: center;
+    }
+    #menu-bar {
+        width: 100%;
+        height: 140px;
+        background-color: purple;
+        color: white;
+        font-family: "Helvetica New", Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        text-align: center;
+        padding: 0.6em 1em 0.3em;
+    }
+    #app-name {
+        font-size: 160%;
+    }
+    #mid-print {
+        font-size: 80%;
+    }
+    #small-print {
+        color: skyblue;
+        font-size: 65%;
+        text-decoration-color: rgb(145, 220, 250);
+    }
+    #textField {
+        width: 90%;
+        height: 3em;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        border-radius: 4px;
+        box-shadow: 0px 2px solid rgb(22, 22, 250);
+        font-size: 21px;
+        color: skyblue;
+        padding: 10px;
+    }
+    #qrcode {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid purple;
+        border-radius: 6px;
+        box-shadow: 0px 2px 8px rgb(73, 2, 73);
+    }
+    #qrcode:hover {
+        border: 4px solid skyblue;
+    }
+    #qrcode:focus {
+        border: 3px solid skyblue;
+    }
+    #qrcode:active {
+        border: 3px solid skyblue;
+    }
+}    
